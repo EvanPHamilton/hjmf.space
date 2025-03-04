@@ -20,6 +20,13 @@
     margin-top: 10px;
 }
 
+.heading-sub {
+    text-align: left;
+    font-size: 18px !important; /* Ensures smaller font size */
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
 
 
 @font-face {
