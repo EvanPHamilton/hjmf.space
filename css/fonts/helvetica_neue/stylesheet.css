@@ -6,35 +6,6 @@
     font-size: 3vw;
 }
 
-.bio-text {
-    font-size: 1.5vw; /* Responsive font size */
-    font-family: 'Helvetica Neue', helveticaneuebold;
-
-}
-
-.gradient-link {
-    font-size: inherit; /* Ensures same size as surrounding text */
-    background: linear-gradient(to right, #1561bf 0%, #1561bf 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-decoration: none;
-
-}
-
-.gradient-link:hover {
-    text-decoration: underline;
-}
-
-
-.outline{
-    color: black;
-    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-    -webkit-text-stroke-width: 1.5px;
-    -webkit-text-stroke-color: black;
-}
-
-
-
 @font-face {
     font-family: 'helveticaneuebold';
     src: url('helvetica_neu_bold-webfont.woff2') format('woff2'),
@@ -91,3 +62,29 @@
     font-style: normal;
 
 }
+.bio-text {
+    font-size: 1.5vw; /* Responsive font size */
+
+}
+
+.gradient-link {
+    font-size: inherit; /* Ensures same size as surrounding text */
+    background: linear-gradient(to right, #1561bf 0%, #1561bf 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+
+}
+
+.gradient-link:hover {
+    text-decoration: underline;
+}
+
+
+.outline{
+    color: black;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+}
+
