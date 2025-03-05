@@ -1,9 +1,7 @@
 
-.text{
-    color: black;
-    font-family: helveticaneuemedium;
-    font-weight: 500;
-    font-size: 3vw;
+.text, .bio-text {
+    font-size: 18px !important; /* Forces all text to be the same */
+    font-family: 'helveticaneuemedium', Helvetica, Arial, sans-serif;
 }
 
 @font-face {
