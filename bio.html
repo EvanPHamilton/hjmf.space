@@ -1,34 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bio</title>
-    <link rel="stylesheet" type="text/css" href="css/updatedstylesheet">
-    
+    <link rel="stylesheet" type="text/css" href="css/fonts/updatedstylesheet.css">
+
     <style>
-        * {
-            box-sizing: border-box;
+        .text, .bio-text {
+            font-size: 1.2rem !important; /* Ensures readability across devices */
+            font-family: 'helveticaneuemedium', Helvetica, Arial, sans-serif;
         }
 
-        .row {
-            display: flex;
-        }
-
-        /* Column structure remains unchanged */
-        .column {
-            flex: 80%;
-        }
-
-        a:link, a:visited {
+        .gradient-link, a {
+            font-size: inherit !important; /* Ensures links match the surrounding text */
+            font-weight: inherit !important;
             text-decoration: none;
-            color: black;
-            cursor: pointer;
-            font-size: 2vw;
-            font-family: helveticaneuemedium;
+        }
+
+        /* Mobile-Specific Fixes */
+        @media (max-width: 768px) { /* Tablets */
+            .text, .bio-text {
+                font-size: 1rem !important;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) { /* Mobile Phones */
+            .text, .bio-text {
+                font-size: 0.9rem !important;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
         }
     </style>
 </head>
+
 
 <body style="margin: 0px; height: 100%; width: 100%; padding: 5%;">
 
