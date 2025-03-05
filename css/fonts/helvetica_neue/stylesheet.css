@@ -65,13 +65,12 @@
 }
 
 .gradient-link {
-    font-family: helveticaneuemedium;
-    font-size: inherit; /* Ensures same size as surrounding text */
-    background: linear-gradient (#1561bf 0%, #1561bf 100%);
+    font-size: inherit !important;  /* Forces the same size as parent text */
+    font-weight: inherit !important; /* Ensures same weight */
+    background: linear-gradient(to right, #1561bf 0%, #1561bf 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration: none;
-
 }
 
 .gradient-link:hover {
