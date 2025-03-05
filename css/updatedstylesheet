@@ -18,6 +18,15 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'helveticaneuelight';
+    src: url('helveticaneue_light-webfont.woff2') format('woff2'),
+         url('helveticaneue_light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
 /* ================================
    General Typography & Global Styles
    ================================ */
@@ -51,9 +60,9 @@ h2 {
 
 h3 {
     font-size: 1.8vw;
-    font-family: 'helveticaneuemedium';
+    font-family: 'helveticaneuelight';
     font-weight: 500;
-    line-height: 1.4;
+    line-height: 1.3;
     margin-bottom: 12px;
 }
 
@@ -85,6 +94,10 @@ h3 {
     h2 {
         font-size: 1.5rem;
     }
+   h3 {
+      font-size: 1.5rem;
+   }
+
 }
 
 @media (max-width: 480px) { /* Mobile Phones */
