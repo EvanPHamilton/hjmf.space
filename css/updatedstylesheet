@@ -26,6 +26,11 @@
     font-style: normal;
 
 }
+.gradient-link, a {
+    font-size: inherit ! important;
+    font-weight: inherit ! important;
+}
+
 
 /* ================================
    General Typography & Global Styles
