@@ -10,7 +10,7 @@
     font-family: 'helveticaneuebold';
     src: url('helvetica_neu_bold-webfont.woff2') format('woff2'),
          url('helvetica_neu_bold-webfont.woff') format('woff');
-    font-weight: normal;
+    font-weight: 700;
     font-style: normal;
 
 }
@@ -32,7 +32,7 @@
     font-family: 'helveticaneuelight';
     src: url('helveticaneue_light-webfont.woff2') format('woff2'),
          url('helveticaneue_light-webfont.woff') format('woff');
-    font-weight: normal;
+    font-weight: 300;
     font-style: normal;
 
 }
@@ -43,7 +43,7 @@
     font-family: 'helveticaneuemedium';
     src: url('helveticaneue_medium-webfont.woff2') format('woff2'),
          url('helveticaneue_medium-webfont.woff') format('woff');
-    font-weight: normal;
+    font-weight: 500;
     font-style: normal;
 
 }
@@ -54,7 +54,7 @@
     font-family: 'helveticaneuethin';
     src: url('helveticaneue_thin-webfont.woff2') format('woff2'),
          url('helveticaneue_thin-webfont.woff') format('woff');
-    font-weight: normal;
+    font-weight: 200;
     font-style: normal;
 
 }
@@ -67,7 +67,7 @@
 .gradient-link {
     font-family: helveticaneuemedium;
     font-size: inherit; /* Ensures same size as surrounding text */
-    background: linear-gradient(to right, #1561bf 0%, #1561bf 100%);
+    background: linear-gradient (#1561bf 0%, #1561bf 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration: none;
