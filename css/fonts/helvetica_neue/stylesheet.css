@@ -13,6 +13,18 @@
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: black;
 }
+.gradient-link {
+    background: linear-gradient(to right, #1561bf 0%, #1561bf 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none; /* Removes underline */
+    font-weight: bold;
+}
+
+.gradient-link:hover {
+    text-decoration: underline; /* Optional hover effect */
+}
+
 
 .small-heading {
     font-size: 18px;
