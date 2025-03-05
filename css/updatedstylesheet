@@ -71,18 +71,18 @@ h3 {
    ================================ */
 
 .text, .bio-text {
-    font-size: 1.2rem !important; /* Ensures readability across devices */
+    font-size: 1.2rem !important; /* Ensures readability across all screen sizes */
     font-family: 'helveticaneuemedium', Helvetica, Arial, sans-serif;
 }
 
 .gradient-link, a {
-    font-size: inherit !important; /* Makes all links match surrounding text */
+    font-size: inherit !important; /* Ensures links match surrounding text */
     font-weight: inherit !important;
     text-decoration: none;
 }
 
-/* Responsive Font Size Adjustments Without Changing Line Height */
-@media (max-width: 768px) { /* Tablets & Small Screens */
+/* Mobile-Specific Fixes */
+@media (max-width: 768px) { /* Tablets */
     .text, .bio-text {
         font-size: 1rem !important;
     }
@@ -94,10 +94,6 @@ h3 {
     h2 {
         font-size: 1.5rem;
     }
-   h3 {
-      font-size: 1.5rem;
-   }
-
 }
 
 @media (max-width: 480px) { /* Mobile Phones */
@@ -113,6 +109,7 @@ h3 {
         font-size: 1.3rem;
     }
 }
+
 
 
 /* ================================
@@ -142,40 +139,43 @@ a {
    Responsive Adjustments for Mobile
    ================================ */
 
-@media (max-width: 768px) { /* Tablets & Small Screens */
+.text, .bio-text {
+    font-size: 1.2rem !important; /* Ensures readability across all screen sizes */
+    font-family: 'helveticaneuemedium', Helvetica, Arial, sans-serif;
+}
+
+.gradient-link, a {
+    font-size: inherit !important; /* Ensures links match surrounding text */
+    font-weight: inherit !important;
+    text-decoration: none;
+}
+
+/* Mobile-Specific Fixes */
+@media (max-width: 768px) { /* Tablets */
+    .text, .bio-text {
+        font-size: 1rem !important;
+    }
+
     h1 {
-        font-size: 5vw;
+        font-size: 2rem;
     }
 
     h2 {
-        font-size: 4vw;
-    }
-
-    h3 {
-        font-size: 3.5vw;
-    }
-
-    .text, .bio-text {
-        font-size: 1rem;
-        line-height: 1 !important; /* Keeps line height tight on mobile */
+        font-size: 1.5rem;
     }
 }
 
 @media (max-width: 480px) { /* Mobile Phones */
+    .text, .bio-text {
+        font-size: 0.9rem !important;
+    }
+
     h1 {
-        font-size: 6vw;
+        font-size: 1.8rem;
     }
 
     h2 {
-        font-size: 4.5vw;
-    }
-
-    h3 {
-        font-size: 3.8vw;
-    }
-
-    .text, .bio-text {
-        font-size: 1rem;
-        line-height: 1 !important; /* No extra spacing */
+        font-size: 1.3rem;
     }
 }
+
