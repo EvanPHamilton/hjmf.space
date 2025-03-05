@@ -1,0 +1,133 @@
+/* ================================
+   Font Imports - Helvetica Neue Variations
+   ================================ */
+
+@font-face {
+    font-family: 'helveticaneuebold';
+    src: url('helvetica_neu_bold-webfont.woff2') format('woff2'),
+         url('helvetica_neu_bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'helveticaneuemedium';
+    src: url('helveticaneue_medium-webfont.woff2') format('woff2'),
+         url('helveticaneue_medium-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* ================================
+   General Typography & Global Styles
+   ================================ */
+
+body {
+    color: black;
+    background-color: #dcdcdc;
+    font-family: 'helveticaneuemedium', Helvetica, Arial, sans-serif;
+    font-size: 1rem; /* Base font size */
+}
+
+/* ================================
+   Headings (Now Responsive)
+   ================================ */
+
+h1 {
+    font-size: 3vw; /* Scales based on screen width */
+    font-family: 'helveticaneuebold';
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2.2vw;
+    font-family: 'helveticaneuemedium';
+    font-weight: 500;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.8vw;
+    font-family: 'helveticaneuemedium';
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+
+/* ================================
+   Body Text & Bio Text (Fixed Line Height)
+   ================================ */
+
+.text, .bio-text {
+    font-size: 1.2rem; /* Scales dynamically */
+    font-family: 'helveticaneuemedium', Helvetica, Arial, sans-serif;
+    line-height: 1 !important; /* Ensures no extra spacing */
+}
+
+/* ================================
+   Hyperlinks & Gradient Links (Same Size as Text)
+   ================================ */
+
+a {
+    text-decoration: none;
+    color: #1883ba;
+}
+
+.gradient-link {
+    font-size: inherit !important; /* Ensures same size as surrounding text */
+    font-weight: inherit !important; /* Matches parent weight */
+    background: linear-gradient(to right, #1561bf 0%, #1561bf 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+}
+
+.gradient-link:hover {
+    font-family: 'helveticaneuemedium';
+    text-decoration: underline;
+}
+
+/* ================================
+   Responsive Adjustments for Mobile
+   ================================ */
+
+@media (max-width: 768px) { /* Tablets & Small Screens */
+    h1 {
+        font-size: 5vw;
+    }
+
+    h2 {
+        font-size: 4vw;
+    }
+
+    h3 {
+        font-size: 3.5vw;
+    }
+
+    .text, .bio-text {
+        font-size: 1rem;
+        line-height: 1 !important; /* Keeps line height tight on mobile */
+    }
+}
+
+@media (max-width: 480px) { /* Mobile Phones */
+    h1 {
+        font-size: 6vw;
+    }
+
+    h2 {
+        font-size: 4.5vw;
+    }
+
+    h3 {
+        font-size: 3.8vw;
+    }
+
+    .text, .bio-text {
+        font-size: 1rem;
+        line-height: 1 !important; /* No extra spacing */
+    }
+}
