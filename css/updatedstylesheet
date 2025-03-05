@@ -79,7 +79,7 @@ h3 {
 
 .text, .bio-text {
     font-size: 1.2rem !important; /* Ensures readability across all screen sizes */
-    font-family: 'helveticaneuemedium', Helvetica, Arial, sans-serif;
+    font-family: 'helveticaneuemedium', Helvetica, sans-serif;
 }
 
 .gradient-link, a {
