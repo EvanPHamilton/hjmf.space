@@ -48,7 +48,7 @@ body {
    ================================ */
 
 h1 {
-    font-size: 3vw; /* Scales based on screen width */
+    font-size: clamp(24px, 3vw, 36px); /* Min 24px, scales with vw, max 36px */
     font-family: 'helveticaneuebold';
     font-weight: 700;
     line-height: 1.2;
@@ -56,14 +56,16 @@ h1 {
 }
 
 h2 {
-    font-size: 2.2vw;
+    font-size: clamp(18px, 2.2vw, 30px); /* Min 18px, scales with vw, max 30px */
     font-family: 'helveticaneuemedium';
     font-weight: 500;
     line-height: 1.2;
     margin-bottom: 15px;
 }
 
+
 h3 {
+   font-size: clamp(18px, 2.2vw, 24px); /* Min 18px, scales with vw, max 24px */
     font-size: 1.8vw;
     font-family: 'helveticaneuelight';
     font-weight: 300;
