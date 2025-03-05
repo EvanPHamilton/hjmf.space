@@ -6,37 +6,31 @@
     font-size: 3vw;
 }
 
+.bio-text {
+    font-size: 1.5vw; /* Responsive font size */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.6; /* Improves readability */
+}
+
+.gradient-link {
+    font-size: inherit; /* Ensures same size as surrounding text */
+    background: linear-gradient(to right, #1561bf 0%, #1561bf 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.gradient-link:hover {
+    text-decoration: underline;
+}
+
 
 .outline{
     color: black;
     -webkit-text-fill-color: white; /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: black;
-}
-.gradient-link {
-    background: linear-gradient(to right, #1561bf 0%, #1561bf 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-decoration: none; /* Removes underline */
-    font-weight: bold;
-}
-
-.gradient-link:hover {
-    text-decoration: underline; /* Optional hover effect */
-}
-
-
-.small-heading {
-    font-size: 18px;
-    font-weight: normal;
-    margin-top: 10px;
-}
-
-.heading-sub {
-    text-align: left;
-    font-size: 18px !important; /* Ensures smaller font size */
-    font-weight: normal;
-    margin-bottom: 5px;
 }
 
 
